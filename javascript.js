@@ -29,9 +29,7 @@ loupe.addEventListener('mouseout',()=>{
 
 let slider = document.querySelector('.slider')
 let taille = slider.clientWidth
-window.addEventListener("resize", function(){
-    taille =slider.clientWidth
-});
+
 let rond1=document.querySelector('.rond1')
 let rond2=document.querySelector('.rond2')
 let rond3=document.querySelector('.rond3')
@@ -41,6 +39,10 @@ let droite = document.getElementById('flecheDroite')
 let gauche = document.getElementById('flecheGauche')
 
 let compteur = 0
+window.addEventListener("resize", function(){
+    taille =slider.clientWidth
+});
+
 if (compteur == 0) {
   gauche.style.opacity = "0"
   rond1.style.backgroundColor="white"
@@ -54,7 +56,6 @@ droite.addEventListener('click', () => {
   }
   if (compteur == 2) {
     droite.style.opacity = "0"
-   
   }
 })
 gauche.addEventListener('click', () => {
@@ -109,7 +110,6 @@ gauche.addEventListener('click', () => {
 
 
 })
-
 
 
 
