@@ -25,6 +25,88 @@ loupe.addEventListener('mouseout',()=>{
     plus1.style.opacity="0"
  
 })
+/*slider*/
+
+let slider = document.querySelector('.slider')
+let taille = slider.clientWidth
+let rond1=document.querySelector('.rond1')
+let rond2=document.querySelector('.rond2')
+let rond3=document.querySelector('.rond3')
+console.log(taille)
+
+let droite = document.getElementById('flecheDroite')
+let gauche = document.getElementById('flecheGauche')
+
+let compteur = 0
+if (compteur == 0) {
+  gauche.style.opacity = "0"
+  rond1.style.backgroundColor="white"
+}
+droite.addEventListener('click', () => {
+  if (compteur < 2) {
+    compteur++
+    console.log(compteur)
+    slider.scrollTo(taille * compteur, 0)
+    gauche.style.opacity = '1'
+  }
+  if (compteur == 2) {
+    droite.style.opacity = "0"
+   
+  }
+})
+gauche.addEventListener('click', () => {
+  if (compteur > 0) {
+    compteur--
+    console.log(compteur)
+    slider.scrollTo(taille * compteur, 0)
+    droite.style.opacity = '1'
+  }
+  if (compteur == 0) {
+    gauche.style.opacity = "0"
+  }
+})
+
+
+droite.addEventListener('click', () => {
+    if (compteur == 0) {
+        rond1.style.backgroundColor="white"
+        rond2.style.backgroundColor="transparent"
+        rond3.style.backgroundColor="transparent"
+      }
+      if (compteur == 1) {
+        rond1.style.backgroundColor="transparent"
+        rond2.style.backgroundColor="white"
+        rond3.style.backgroundColor="transparent"
+      }
+      if (compteur == 2) {
+        rond1.style.backgroundColor="transparent"
+        rond2.style.backgroundColor="transparent"
+        rond3.style.backgroundColor="white"
+      }
+
+
+})
+
+gauche.addEventListener('click', () => {
+    if (compteur == 0) {
+        rond1.style.backgroundColor="white"
+        rond2.style.backgroundColor="transparent"
+        rond3.style.backgroundColor="transparent"
+      }
+      if (compteur == 1) {
+        rond1.style.backgroundColor="transparent"
+        rond2.style.backgroundColor="white"
+        rond3.style.backgroundColor="transparent"
+      }
+      if (compteur == 2) {
+        rond1.style.backgroundColor="transparent"
+        rond2.style.backgroundColor="transparent"
+        rond3.style.backgroundColor="white"
+      }
+
+
+})
+
 
 
 
