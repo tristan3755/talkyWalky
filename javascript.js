@@ -29,6 +29,9 @@ loupe.addEventListener('mouseout',()=>{
 
 let slider = document.querySelector('.slider')
 let taille = slider.clientWidth
+window.addEventListener("resize", function(){
+    taille =slider.clientWidth
+});
 let rond1=document.querySelector('.rond1')
 let rond2=document.querySelector('.rond2')
 let rond3=document.querySelector('.rond3')

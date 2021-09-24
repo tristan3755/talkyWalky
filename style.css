@@ -208,17 +208,25 @@ transform: scale(1);
   .prestaBloc {
     min-height: 100%;
     min-width: 100%;
-    background-color: indigo;
+  background-image: url('./images/slide1.jpg');
+  background-position: center;
+  background-size: cover;
   }
   .prestaBloc2 {
     min-height: 100%;
     min-width: 100%;
-    background-color: rgb(80, 130, 0);
+    background-image: url('./images/slide2.jpg');
+  background-position: center;
+  background-size: cover;
+ 
   }
   .prestaBloc3 {
     min-height: 100%;
     min-width: 100%;
-    background-color: rgb(130, 0, 0);
+    background-image: url('./images/slide3.jpg');
+  background-position: center;
+  background-size: cover;
+ 
   }
   /*controle*/
   #controle{
@@ -238,7 +246,6 @@ transform: scale(1);
     width: 20px;
     border-radius: 50%;
    border: 2px solid white;
- 
 }
   #controle div:nth-child(1),  #controle div:nth-child(5){
       width: 10%;
@@ -247,4 +254,15 @@ transform: scale(1);
   #controle div:nth-child(1):hover,  #controle div:nth-child(5):hover{
       cursor: pointer;
   }
-
+/*meteo*/
+.meteo{
+    position: fixed;
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    right: 0;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border: solid 10px white;
+}
