@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100%;
+}
+#nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 10vh;
+}
+#nav1 a{
+    position: relative;
+    text-decoration: none;
+    color: #919192;
+    text-transform: uppercase; 
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-family: 'Source Serif Pro', serif;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*nav1 effets*/
+#nav1 a:nth-child(1){
+    color: #B1B000;
+    border-top: solid 3px #B1B000;
+    font-weight: bold;
+}
+#nav1 a:hover{
+    color: #B1B000; 
+    font-weight: bold;
+}
+#nav1 a span{
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 3px;
+}
+#nav1 a span:nth-child(1){
+   right: 40%;
+   transform: scale(0);
+   transform-origin: right;
+   background-color: #B1B000;
+   transition: ease-in-out 0.5s;
+  }
+  #nav1 a span:nth-child(2){
+    left: 40%;
+    transform-origin: left;
+    background-color: #B1B000;
+    transform: scale(0);
+    transition: ease-in-out 0.5s;
+   }
+    #nav1 a:hover span:nth-child(1){
+transform: scale(1);
+}
+   #nav1 a:hover span:nth-child(2){
+    transform: scale(1);
+   }
+
+   /*nav1 effets fin*/
+#nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 10vh;
+}
+#nav2 p{
+    color: #919192;
+}
+#nav2 p:nth-child(1){
+    position: relative;
+    color: #65645B;
+    font-family: 'Source Serif Pro', serif;
+    font-weight:bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+#nav2 p:nth-child(1) span{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 3px;
+}
+#nav2 p:nth-child(1) span:nth-child(1){
+    right: 40%;
+    transform: scale(0);
+    transform-origin: right;
+    background-color: #B1B000;
+    transition: ease-in-out 0.5s;
+}
+   #nav2 p:nth-child(1) span:nth-child(2){
+     left: 40%;
+     transform-origin: left;
+     background-color: #B1B000;
+     transform: scale(0);
+     transition: ease-in-out 0.5s;
+    }
+    #nav2 p:nth-child(1):hover {
+        cursor: pointer;
+        color: #B1B000;
+        font-weight: bold;
+    }
+    #nav2 p:nth-child(1):hover span:nth-child(1){
+       transform: scale(1);
+       }
+       #nav2 p:nth-child(1):hover span:nth-child(2){
+           transform: scale(1);
+          }
+#nav2 p:nth-child(2){
+    position: relative;
+    color: #919192;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav2 p:nth-child(2) span{
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 3px;
+}
+  #nav2 p:nth-child(2) span:nth-child(1){
+     right: 40%;
+     transform: scale(0);
+     transform-origin: right;
+     background-color: #B1B000;
+     transition: ease-in-out 0.5s;
+}
+    #nav2 p:nth-child(2) span:nth-child(2){
+      left: 40%;
+      transform-origin: left;
+      background-color: #B1B000;
+      transform: scale(0);
+      transition: ease-in-out 0.5s;
+     }
+     #nav2 p:nth-child(2):hover {
+         cursor: pointer;
+         color: #B1B000;
+         font-weight: bold;
+     }
+     #nav2 p:nth-child(2):hover span:nth-child(1){
+        transform: scale(1);
+        }
+        #nav2 p:nth-child(2):hover span:nth-child(2){
+            transform: scale(1);
+           }
+.loupe{
+    width: 20px;
+    height: 20px;
+    transition: ease-in-out 0.5s;
+}
+.loupeTaille{
+    transition: ease-in-out 0.5s;
+}
+.loupe:hover{
+    cursor: pointer;
+}
