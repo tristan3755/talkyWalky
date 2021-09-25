@@ -532,9 +532,128 @@ border-bottom: 2px dashed #9191928F;
  /*#*/
 /*agenda*/
 #agenda{
+    margin-top: -55px;
     position: sticky;
-    top: 20px;
+    top: 7px;
     width: 30%;
-    height: 50vh;    
+    height: 57vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+.titreGeneral{
+    color: #B1B000;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 12px;  
+}
+#agenda span{
+    background-color: #B1B000;
+    width: 80%;
+    height: 2px;
+}
+.articleAgenda{
+    position: relative;
+    width:80%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.articleAgenda:hover{
+    background-color:#e4e3e3;
+    cursor: pointer;
+}
+.img1,.img2,.img3,.img4,.img5{
+    width: 40%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img1{
+    background-image: url('./images/slide1.jpg');
+}
+.img2{
+    background-image: url('./images/art3.jpg');
+}
+.img3{
+    background-image: url('./images/slide3.jpg');
+}
+.img4{
+    background-image: url('./images/art2.jpg');
+}
+.img5{
+    background-image: url('./images/slide2.jpg');
+}
+.text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text .titreMini{
+    color: #AE4F5E;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+    margin: 0;
+}
+.titreMiniEnv{
+    color: #4F7F99;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+    margin: 0;
+}
+.titreMiniVigne{
+    color: #B4B287;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+    margin: 0;
+}
+.text .textMini{
+    color: #65645B;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 13px;
+    margin: 0;
+}
+.text div{
+   height: 40px;
+   width: 60px;
+}
+.borderRed{
+position: absolute;
+left: 0;
+height: 100%;
+width: 5px;
+z-index: 1;
+background-color: #AE4F5E;
+transition: ease-in-out 0.5s;
+}
+.borderBlue{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    z-index: 1;
+    background-color: #4F7F99;
+    transition: ease-in-out 0.5s;
+    }
+    .borderJaune{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 5px;
+        z-index: 1;
+        background-color: #B4B287;
+        transition: ease-in-out 0.5s;
+    }
+    .articleAgenda:hover .borderRed {
+        width: 10px;
+         }
+         .articleAgenda:hover .borderBlue {
+            width: 10px;
+             }
+    .articleAgenda:hover .borderJaune {
+   width: 10px;
+    }
 /*agenda*/
