@@ -377,6 +377,7 @@ border-bottom: 2px dashed #9191928F;
     font-family: 'Source Serif Pro', serif;
     text-align: center;
 }
+
 /*article1*/
 /*article2*/
 .article2 div:nth-child(2){
@@ -490,6 +491,45 @@ border-bottom: 2px dashed #9191928F;
     width: 7px;
     height: 60px;
  }
+ /*#*/
+ .hashtag{
+    position: absolute;
+    background-color:#e4e3e3;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    margin-bottom: 0;  
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: ease-in-out 0.5s;
+    border:1px solid #919192;;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.hashtag i{
+    color: #919192;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-size: 12px;
+}
+.article1 div:nth-child(1):hover .hashtag{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.article2 div:nth-child(1):hover .hashtag{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.article3 div:nth-child(1):hover .hashtag{
+    transform: scaleY(1);
+    opacity: 1;
+}
+ /*#*/
 /*agenda*/
 #agenda{
     position: sticky;
