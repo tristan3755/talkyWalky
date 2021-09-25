@@ -360,7 +360,7 @@ transition: ease-in-out 2s;
     color: white;
     font-family: 'Source Serif Pro', serif;
     width: 200px;
-    height: 50px;
+    min-height: 50px;
     background-color: #4F7F99;
     border-radius: 10px;
     display: flex;
@@ -400,7 +400,7 @@ transition: ease-in-out 2s;
     color: white;
     font-family: 'Source Serif Pro', serif;
     width: 200px;
-    height: 50px;
+    min-height: 50px;
     background-color: #AE4F5E;
     border-radius: 10px;
     display: flex;
@@ -439,7 +439,7 @@ transition: ease-in-out 2s;
     color: white;
     font-family: 'Source Serif Pro', serif;
     width: 200px;
-    height: 50px;
+    min-height: 50px;
     background-color: #B4B287;
     border-radius: 10px;
     display: flex;
@@ -500,7 +500,7 @@ transition: ease-in-out 2s;
  .hashtag{
     position: absolute;
     background-color:#e4e3e3;
-    height: 10%;
+    min-height: 10%;
     width: 100%;
     bottom: 0;
     z-index: 2;
@@ -512,6 +512,7 @@ transition: ease-in-out 2s;
     border-top: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     opacity: 0.8;
@@ -930,7 +931,7 @@ font-family: 'Source Serif Pro', serif;
 }
 
 /*responsive*/
-@media(max-width:600px){
+@media(max-width:720px){
     #nav1{
 width: 100%;
     }
@@ -948,4 +949,50 @@ width: 100%;
         font-size: 10px;
     }
 
+    .article1 div:nth-child(2) p:nth-child(1){
+        width: 100px;
+        font-size: 10px;
+    }
+    .article1 div:nth-child(2) p:nth-child(2){
+        font-size: 10px;
+    }
+    .article1 div:nth-child(2) p:nth-child(4){
+        font-size: 8px;
+    }
+    .article1 div:nth-child(2) div:nth-child(3){
+        height: 80px;
+        width: 80px;
+    }
+    .article2 div:nth-child(2) p:nth-child(1){
+        width: 100px;
+        font-size: 10px;
+    }
+    .article2 div:nth-child(2) p:nth-child(2){
+        font-size: 10px;
+    }
+    .article2 div:nth-child(2) p:nth-child(4){
+        font-size: 8px;
+    }
+    .article2 div:nth-child(2) div:nth-child(3){
+        height: 80px;
+        width: 80px;
+    }
+    .article3 div:nth-child(2) p:nth-child(1){
+        width: 100px;
+        font-size: 10px;
+    }
+    .article3 div:nth-child(2) p:nth-child(2){
+        font-size: 10px;
+    }
+    .article3 div:nth-child(2) p:nth-child(4){
+        font-size: 8px;
+    }
+    .article3 div:nth-child(2) div:nth-child(3){
+        height: 80px;
+        width: 80px;
+    }
+
 }
+
+ 
+ 
