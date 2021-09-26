@@ -934,7 +934,61 @@ font-family: 'Source Serif Pro', serif;
 .validation:hover .trait {
     transform: scale(1);
 }
+/*footer*/
 
+footer{
+    margin-top: 10vh;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #65645B;
+}
+.fontAwesome{
+width: 200px;
+height: 10vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+}
+.fontAwesome>*{
+    font-size: 3vmin;
+    color: white;
+}
+.navFooter{
+ width: 550px;
+ max-width: 80%;
+height: 10vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+}
+.navFooter>*{
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Serif Pro', serif;
+    text-transform: uppercase;
+    font-size: 1.5vmin;
+    font-weight: lighter;
+}
+.copy{
+    width: 150px;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.copy>*{
+    color: white;
+    font-size: 1.5vmin;
+}
+/*footer*/
 /*responsive*/
 @media(max-width:720px){
     #nav1{
@@ -998,7 +1052,6 @@ width: 100%;
     }
 
 }
-
 @media(max-width:720px){
     .text div{
         width: 40px;
