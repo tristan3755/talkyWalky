@@ -190,14 +190,14 @@ let observer3 = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           console.log(entry.isIntersecting)
           console.log(entry.intersectionRatio)
-          if (entry.intersectionRatio>=0.2) {
+          if (entry.intersectionRatio>=0.4) {
             console.log('j \'y suis')
             target5.style.opacity='1'
-            target5.style.transform="translateY(0)"
+            target5.style.transform="translatex(0)"
             observer.disconnect()
           }
         })
-      },{threshold: 0.2});
+      },{threshold: 0.4});
     
     
       observer5.observe(target5);
