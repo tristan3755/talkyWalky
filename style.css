@@ -838,7 +838,7 @@ background-color: #F3F3F2;
 }
 .caroussel{
     height: 50vh;
-    width: calc(200px*16);
+    width: calc(200px*24);
     display: flex;
    flex-direction: row;
     align-items: center;
@@ -865,8 +865,6 @@ transform: translateX(0);
     width: 200px;
     margin: 20px;
 }
-
-
  /*contact*/
  #contactForm{
     min-height: 100vh;
@@ -878,6 +876,12 @@ transform: translateX(0);
     transition: ease-in-out 1s;
     transform: translateY(50vh);
     opacity: 0;
+    margin-top: 200px;
+}
+.borderContact{
+    height: 3px;
+    width: 80%;
+border-bottom: 2px dashed #9191928F;
 }
 #contactForm article{
     position: relative;
